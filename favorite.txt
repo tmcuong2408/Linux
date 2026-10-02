@@ -20,3 +20,4 @@ sudo apt install texlive-full -y
 sudo apt install texstudio -y
 curl -fsSL https://tailscale.com/install.sh | sh
 sudo tailscale up
+sudo apt install smbclient -y
