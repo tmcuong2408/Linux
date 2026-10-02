@@ -1,0 +1,17 @@
+{
+    "abbrev": "envdef",
+    "description": [
+        "envdef"
+    ],
+    "formatVersion": 2,
+    "menu": "",
+    "name": "envdef",
+    "shortcut": "Ctrl+A,Ctrl+D",
+    "tag": [
+        "\\begin{definition}",
+        "\t%<formula%>",
+        "\\end{definition}"
+    ],
+    "trigger": "envdef",
+    "type": "Snippet"
+}

@@ -1,0 +1,15 @@
+[Unit]
+Description=Auto Git Pull on Boot
+Before=display-manager.service sddm.service
+After=network-online.target NetworkManager.service
+Wants=network-online.target NetworkManager-wait-online.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/git-auto-pull.sh
+StandardOutput=tty
+StandardError=tty
+TTYPath=/dev/tty1
+
+[Install]
+WantedBy=multi-user.target

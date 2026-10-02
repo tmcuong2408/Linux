@@ -1,0 +1,16 @@
+{
+    "abbrev": "autopush",
+    "description": [
+        "autopush"
+    ],
+    "formatVersion": 2,
+    "menu": "",
+    "name": "autopush",
+    "shortcut": "Shift+F2",
+    "tag": [
+        "var dir = editor.fileName().replace(/\\/[^\\/]*$/, \"\");",
+        "system(\"bash -c 'cd \\\"\" + dir + \"\\\" && git add . && git commit -m \\\"Auto-commit after build\\\" && git push'\");"
+    ],
+    "trigger": "autopush",
+    "type": "Script"
+}

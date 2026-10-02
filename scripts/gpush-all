@@ -1,0 +1,51 @@
+#!/bin/bash
+
+TARGET_DIR="/home/admin"
+USER_NAME="admin"
+
+# Kiểm tra nếu không chạy bằng quyền root thì tự động gọi sudo
+if [ "$EUID" -ne 0 ]; then
+    echo "🔑 Script cần quyền Root để thực thi không hỏi password..."
+    exec sudo "$0" "$@"
+fi
+
+echo "=================================================="
+echo "🚀 BẮT ĐẦU TỰ ĐỘNG GPUSH TOÀN BỘ REPO TRONG $TARGET_DIR"
+echo "=================================================="
+
+# Tìm tất cả thư mục chứa .git
+find "$TARGET_DIR" -maxdepth 3 -type d -name ".git" 2>/dev/null | while read -r gitdir; do
+    repo_dir=$(dirname "$gitdir")
+    
+    echo ""
+    echo "📁 Đang xử lý repo: $repo_dir"
+    echo "--------------------------------------------------"
+    
+    # Dùng runuser để thực thi chuỗi lệnh dưới quyền admin mà KHÔNG hỏi password
+    runuser -l "$USER_NAME" -c "
+        cd \"$repo_dir\" || exit 1
+
+        # Kiểm tra thay đổi
+        if [ -n \"\$(git status --porcelain)\" ]; then
+            echo \"📦 Phát hiện thay đổi mới, đang add & commit...\"
+            git add .
+            git commit -m \"Auto commit & push script: \$(date +'%Y-%m-%d %H:%M:%S')\"
+        else
+            echo \"ℹ️ Không có thay đổi mới cần commit.\"
+        fi
+
+        # Kiểm tra branch và push
+        current_branch=\$(git rev-parse --abbrev-ref HEAD 2>/dev/null)
+        if [ -n \"\$current_branch\" ]; then
+            echo \"📤 Đang push nhánh: \$current_branch...\"
+            git push origin \"\$current_branch\"
+        else
+            echo \"⚠️ Không xác định được nhánh Git hiện tại.\"
+        fi
+    "
+done
+
+echo ""
+echo "=================================================="
+echo "✅ HOÀN TẤT GPUSH CHO TẤT CẢ REPO!"
+echo "=================================================="

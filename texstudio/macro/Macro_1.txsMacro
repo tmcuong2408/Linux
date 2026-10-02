@@ -1,0 +1,18 @@
+{
+    "abbrev": "latexindent",
+    "description": [
+        "latexindent"
+    ],
+    "formatVersion": 2,
+    "menu": "",
+    "name": "latexindent",
+    "shortcut": "Shift+F1",
+    "tag": [
+        "// Trigger latexindent format cho file hiện tại",
+        "system(\"latexindent -w -s \\\"\" + editor.fileName() + \"\\\"\");",
+        "// Reload lại file sau khi format",
+        "app.load(editor.fileName());"
+    ],
+    "trigger": "latexindent",
+    "type": "Script"
+}

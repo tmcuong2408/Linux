@@ -175,9 +175,54 @@ gpdf() {
     gpush
 }
 
-setterm(){
-    cd ~/Linux
+save() {
+    echo "=================================================="
+    echo "📦 BẮT ĐẦU DỌN DẸP VÀ SAO LƯU HỆ THỐNG VÀO ~/Linux..."
+    echo "=================================================="
+
+    # 1. Chuyển ngay vào thư mục ~/Linux đầu tiên
+    cd ~/Linux || { echo "❌ Không tìm thấy thư mục ~/Linux!"; return 1; }
+
+    # 2. Pull code mới nhất từ GitHub về trước để tránh conflict
+    echo "🌐 Đang đồng bộ dữ liệu mới nhất (git pull)..."
     git pull
-    cp ~/.bashrc . -r
-    gpush
+
+    # 3. Đảm bảo các thư mục lưu trữ cấu hình đã sẵn sàng
+    mkdir -p scripts systemd texstudio kde-config
+
+    # 4. Sao chép các file kịch bản Bash (/usr/local/bin)
+    echo "🔄 Đang chép các kịch bản Bash..."
+    [ -f /usr/local/bin/git-auto-pull.sh ] && cp /usr/local/bin/git-auto-pull.sh ./scripts/
+    [ -f /usr/local/bin/git-auto-push-shutdown.sh ] && cp /usr/local/bin/git-auto-push-shutdown.sh ./scripts/
+    [ -f /usr/local/bin/tex-format ] && cp /usr/local/bin/tex-format ./scripts/
+    [ -f /usr/local/bin/gpush-all ] && cp /usr/local/bin/gpush-all ./scripts/
+
+    # 5. Sao chép các dịch vụ Systemd
+    echo "⚙️ Đang chép các Systemd Service..."
+    [ -f /etc/systemd/system/git-pull-boot.service ] && cp /etc/systemd/system/git-pull-boot.service ./systemd/
+    [ -f /etc/systemd/system/run-on-shutdown.service ] && cp /etc/systemd/system/run-on-shutdown.service ./systemd/
+    [ -f ~/.config/systemd/user/keep-firefox.service ] && cp ~/.config/systemd/user/keep-firefox.service ./systemd/
+
+    # 6. Sao chép cấu hình TeXstudio (Macros, Config)
+    echo "📝 Đang chép cấu hình TeXstudio..."
+    [ -d ~/.config/texstudio ] && cp -r ~/.config/texstudio/* ./texstudio/
+
+    # 7. Sao chép .bashrc và kịch bản KDE Shutdown
+    echo "🛠️ Đang chép .bashrc và KDE Shutdown scripts..."
+    cp ~/.bashrc ./.bashrc
+    [ -d ~/.config/plasma-workspace/shutdown ] && cp -r ~/.config/plasma-workspace/shutdown ./kde-config/
+
+    # 8. Push tất cả thay đổi mới lên Git
+    echo "📤 Đang Commit và Push lên GitHub..."
+    git add .
+    if [ -n "$(git status --porcelain)" ]; then
+        git commit -m "Auto save system configs & scripts: $(date +'%Y-%m-%d %H:%M:%S')"
+        gpush-all
+    else
+        echo "ℹ️ Không có thay đổi mới trong cấu hình."
+    fi
+
+    echo "=================================================="
+    echo "✅ SAO LƯU HOÀN TẤT VÀ ĐÃ ĐẨY LÊN GIT!"
+    echo "=================================================="
 }
