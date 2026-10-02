@@ -1,21 +1,29 @@
 {
     "InternalPDFViewer": {
         "Embedded": true,
-        "File": "../../tuvi/TuVi.pdf"
+        "File": "../../mu_document/Extended Logic & Mathematics of Uncertainty.pdf"
     },
     "Session": {
         "Bookmarks": [
         ],
-        "CurrentFile": "../../tuvi/TuVi.tex",
+        "CurrentFile": "../../mu_document/Extended Logic & Mathematics of Uncertainty.tex",
         "FileVersion": 1,
         "Files": [
             {
                 "Col": 22,
                 "EditorGroup": 0,
                 "FileName": "../../tuvi/TuVi.tex",
-                "FirstLine": 12,
+                "FirstLine": 11,
                 "FoldedLines": "",
                 "Line": 180
+            },
+            {
+                "Col": 31,
+                "EditorGroup": 0,
+                "FileName": "../../mu_document/Extended Logic & Mathematics of Uncertainty.tex",
+                "FirstLine": 1900,
+                "FoldedLines": "",
+                "Line": 1980
             }
         ],
         "MasterFile": "",

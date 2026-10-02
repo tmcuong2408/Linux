@@ -11,12 +11,22 @@
     ],
     "modified": "Sat Oct 3 01:08:59 2026",
     "packages": [
-        "#amsthm",
-        "#url",
-        "#amsmath",
-        "#mathtools",
         "#enumitem",
         "#autobreak",
+        "vietnamese#babel",
+        "#silence",
+        "#amssymb",
+        "utf8x#inputenc",
+        "#amsmath",
+        "#mathtools",
+        "#amssymb",
+        "#microtype",
+        "#color",
+        "#url",
+        "#booktabs",
+        "#amsthm",
+        "#hyperref",
+        "#nameref",
         "a4paper,14pt, twoside#class-memoir",
         "a4paper,14pt, twoside#latex-document",
         "a4paper,14pt, twoside#latex-dev",
@@ -25,17 +35,7 @@
         "a4paper,14pt, twoside#booktabs",
         "a4paper,14pt, twoside#dcolumn",
         "a4paper,14pt, twoside#delarray",
-        "a4paper,14pt, twoside#array",
-        "#amssymb",
-        "vietnamese#babel",
-        "#color",
-        "#booktabs",
-        "#microtype",
-        "#amssymb",
-        "utf8x#inputenc",
-        "#silence",
-        "#hyperref",
-        "#nameref"
+        "a4paper,14pt, twoside#array"
     ],
     "refs": [
         "tab:16_linh_vuc"
@@ -53,36 +53,68 @@
     ],
     "usercommands": [
         [
-            "\\bd",
-            "\\bd{}"
-        ],
-        [
-            "\\ddclmd",
-            "\\ddclmd"
+            "\\set",
+            "\\set{}"
         ],
         [
             "",
-            "\\Omega_-"
+            "\\Omega_{d(b_i)}"
         ],
         [
             "",
-            "\\bigcup_{\\beta \\in \\{0,1\\}^{\\frac{n}{2}}}"
-        ],
-        [
-            "\\pgr",
-            "\\pgr"
+            "\\prod_{i=1}"
         ],
         [
             "",
-            "\\Omega_-"
+            "\\beta_2"
         ],
         [
             "",
-            "\\Omega_+"
+            "\\beta_1"
         ],
         [
             "",
-            "\\Omega_-"
+            "\\beta_2"
+        ],
+        [
+            "",
+            "\\beta_1"
+        ],
+        [
+            "\\Tr",
+            "\\Tr"
+        ],
+        [
+            "",
+            "\\mathcal{C}"
+        ],
+        [
+            "",
+            "\\mathcal{C}"
+        ],
+        [
+            "",
+            "\\mathcal{C}"
+        ],
+        [
+            "\\gtcl",
+            "\\gtcl{}{}"
+        ],
+        [
+            "\\hpw",
+            "\\hpw{}{}"
+        ],
+        [
+            "\\card",
+            "\\card"
+        ],
+        [
+            "definition",
+            "\\end{definition}"
+        ],
+        [
+            "definition",
+            "\\begin{definition}"
         ],
         [
             "\\tsbd",
@@ -90,7 +122,147 @@
         ],
         [
             "",
+            "\\Omega_-"
+        ],
+        [
+            "",
             "\\Omega_+"
+        ],
+        [
+            "",
+            "\\Omega_-"
+        ],
+        [
+            "",
+            "\\Omega_+"
+        ],
+        [
+            "\\rad",
+            "\\rad"
+        ],
+        [
+            "",
+            "\\Omega_-"
+        ],
+        [
+            "\\w",
+            "\\w"
+        ],
+        [
+            "",
+            "\\mathcal{C}"
+        ],
+        [
+            "\\bd",
+            "\\bd{}"
+        ],
+        [
+            "\\eq",
+            "\\eq{}"
+        ],
+        [
+            "\\ddclmd",
+            "\\ddclmd"
+        ],
+        [
+            "\\kgdd",
+            "\\kgdd{}"
+        ],
+        [
+            "",
+            "\\Omega_-"
+        ],
+        [
+            "",
+            "\\Omega_+"
+        ],
+        [
+            "\\ts",
+            "\\ts{}"
+        ],
+        [
+            "",
+            "\\sum_{\\omega \\in \\Omega}"
+        ],
+        [
+            "",
+            "\\log_2"
+        ],
+        [
+            "",
+            "\\Omega_-"
+        ],
+        [
+            "",
+            "\\Omega_+"
+        ],
+        [
+            "",
+            "\\Omega_+"
+        ],
+        [
+            "",
+            "\\Omega_-"
+        ],
+        [
+            "example",
+            "\\end{example}"
+        ],
+        [
+            "example",
+            "\\begin{example}"
+        ],
+        [
+            "",
+            "\\Omega_+"
+        ],
+        [
+            "md",
+            "\\end{md}"
+        ],
+        [
+            "md",
+            "\\begin{md}"
+        ],
+        [
+            "remark",
+            "\\end{remark}"
+        ],
+        [
+            "remark",
+            "\\begin{remark}"
+        ],
+        [
+            "",
+            "\\overline{\\beta}"
+        ],
+        [
+            "",
+            "\\mathcal{C}"
+        ],
+        [
+            "theorem",
+            "\\end{theorem}"
+        ],
+        [
+            "theorem",
+            "\\begin{theorem}"
+        ],
+        [
+            "",
+            "\\Omega_-"
+        ],
+        [
+            "",
+            "\\mathcal{C}"
+        ],
+        [
+            "",
+            "\\mathcal{C}"
+        ],
+        [
+            "\\kbd",
+            "\\kbd{}"
         ],
         [
             "chungminh",
@@ -106,47 +278,7 @@
         ],
         [
             "",
-            "\\Omega_+"
-        ],
-        [
-            "",
-            "\\Omega_-"
-        ],
-        [
-            "",
-            "\\mathcal{C}"
-        ],
-        [
-            "",
-            "\\mathcal{C}"
-        ],
-        [
-            "",
-            "\\Omega_-"
-        ],
-        [
-            "",
-            "\\mathcal{C}"
-        ],
-        [
-            "definition",
-            "\\end{definition}"
-        ],
-        [
-            "definition",
-            "\\begin{definition}"
-        ],
-        [
-            "",
-            "\\Omega_+"
-        ],
-        [
-            "\\scale",
-            "\\scale"
-        ],
-        [
-            "\\w",
-            "\\w"
+            "\\bigcup_{\\beta \\in \\{0,1\\}^{\\frac{n}{2}}}"
         ],
         [
             "",
@@ -154,187 +286,7 @@
         ],
         [
             "",
-            "\\Omega_-"
-        ],
-        [
-            "",
-            "\\mathcal{C}"
-        ],
-        [
-            "",
-            "\\mathcal{C}"
-        ],
-        [
-            "",
-            "\\beta_2"
-        ],
-        [
-            "",
-            "\\beta_1"
-        ],
-        [
-            "",
-            "\\beta_2"
-        ],
-        [
-            "",
-            "\\beta_1"
-        ],
-        [
-            "",
-            "\\Omega_-"
-        ],
-        [
-            "",
             "\\Omega_+"
-        ],
-        [
-            "",
-            "\\Omega_{d(b_i)}"
-        ],
-        [
-            "",
-            "\\prod_{i=1}"
-        ],
-        [
-            "\\pr",
-            "\\pr"
-        ],
-        [
-            "\\kgdd",
-            "\\kgdd{}"
-        ],
-        [
-            "",
-            "\\overline{\\beta}"
-        ],
-        [
-            "\\gtcl",
-            "\\gtcl{}{}"
-        ],
-        [
-            "\\eq",
-            "\\eq{}"
-        ],
-        [
-            "",
-            "\\sum_{\\omega \\in \\Omega}"
-        ],
-        [
-            "",
-            "\\Omega_+"
-        ],
-        [
-            "\\card",
-            "\\card"
-        ],
-        [
-            "",
-            "\\mathcal{C}"
-        ],
-        [
-            "\\rad",
-            "\\rad"
-        ],
-        [
-            "",
-            "\\log_2"
-        ],
-        [
-            "\\hbd",
-            "\\hbd{}{}"
-        ],
-        [
-            "\\Tr",
-            "\\Tr"
-        ],
-        [
-            "",
-            "\\Omega_+"
-        ],
-        [
-            "",
-            "\\Omega_-"
-        ],
-        [
-            "\\s",
-            "\\s{}"
-        ],
-        [
-            "example",
-            "\\end{example}"
-        ],
-        [
-            "example",
-            "\\begin{example}"
-        ],
-        [
-            "",
-            "\\mathcal{C}"
-        ],
-        [
-            "\\tsbdts",
-            "\\tsbdts{}"
-        ],
-        [
-            "\\set",
-            "\\set{}"
-        ],
-        [
-            "",
-            "\\Omega_-"
-        ],
-        [
-            "\\hpw",
-            "\\hpw{}{}"
-        ],
-        [
-            "",
-            "\\Omega_+"
-        ],
-        [
-            "theorem",
-            "\\end{theorem}"
-        ],
-        [
-            "theorem",
-            "\\begin{theorem}"
-        ],
-        [
-            "\\kbd",
-            "\\kbd{}"
-        ],
-        [
-            "\\ts",
-            "\\ts{}"
-        ],
-        [
-            "md",
-            "\\end{md}"
-        ],
-        [
-            "md",
-            "\\begin{md}"
-        ],
-        [
-            "",
-            "\\Omega_+"
-        ],
-        [
-            "",
-            "\\mathcal{C}"
-        ],
-        [
-            "remark",
-            "\\end{remark}"
-        ],
-        [
-            "remark",
-            "\\begin{remark}"
-        ],
-        [
-            "",
-            "\\Omega_-"
         ],
         [
             "",
@@ -345,8 +297,52 @@
             "\\prod_{i=1}"
         ],
         [
+            "\\tsbdts",
+            "\\tsbdts{}"
+        ],
+        [
+            "",
+            "\\Omega_-"
+        ],
+        [
+            "",
+            "\\mathcal{C}"
+        ],
+        [
+            "\\s",
+            "\\s{}"
+        ],
+        [
+            "\\pr",
+            "\\pr"
+        ],
+        [
+            "",
+            "\\Omega_+"
+        ],
+        [
+            "",
+            "\\Omega_-"
+        ],
+        [
+            "",
+            "\\Omega_-"
+        ],
+        [
+            "",
+            "\\Omega_+"
+        ],
+        [
+            "\\scale",
+            "\\scale"
+        ],
+        [
             "\\gr",
             "\\gr{}"
+        ],
+        [
+            "\\hbd",
+            "\\hbd{}{}"
         ],
         [
             "",
@@ -359,6 +355,10 @@
         [
             "",
             "\\mathcal{C}"
+        ],
+        [
+            "\\pgr",
+            "\\pgr"
         ]
     ]
 }
