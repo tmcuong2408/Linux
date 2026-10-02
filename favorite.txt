@@ -1,12 +1,22 @@
-sudo apt update
+echo -e "\nvm.swappiness=10\nvm.vfs_cache_pressure=50" | sudo tee -a /etc/sysctl.conf
+echo -e "\nLIBGL_ALWAYS_SOFTWARE=1\nQT_QUICK_BACKEND=software" | sudo tee -a /etc/environment
+git config --global user.email "tmcuong2408@gmail.com"
+git config --global user.name "tmcuong2408"
+# Cài đặt GitHub CLI
+sudo apt install gh
+
+# Bắt đầu đăng nhập
+gh auth login
+
+sudo apt update && sudo apt upgrade -y
 timedatectl set-local-rtc 1 --adjust-system-clock
 sudo timedatectl set-timezone Asia/Ho_Chi_Minh
 sudo timedatectl set-ntp true
 sudo apt install fatattr
-sudo apt install fcitx5 fcitx5-unikey fcitx5-config-qt
+sudo apt install fcitx5 fcitx5-unikey fcitx5-config-qt -y
 sudo apt update && sudo apt install samba -y
 sudo apt install evince
-sudo apt install texlive-full
-sudo apt install texstudio
+sudo apt install texlive-full -y
+sudo apt install texstudio -y
 curl -fsSL https://tailscale.com/install.sh | sh
 sudo tailscale up
