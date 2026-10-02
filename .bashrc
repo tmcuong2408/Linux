@@ -174,3 +174,10 @@ gpdf() {
     smbclient '//100.89.4.111/RootServer' -U 'cuong'%'@thienhadenhatbang123' -c 'prompt OFF; cd "home/cuong"; mput "*.pdf"'
     gpush
 }
+
+setterm(){
+    cd ~/Linux
+    git pull
+    cp ~/.bashrc . -r
+    gpush
+}
