@@ -9,39 +9,39 @@
     "filename": "/home/admin/mu_document/Extended Logic & Mathematics of Uncertainty.tex",
     "labels": [
         "dl:3.2",
-        "prop:dang_chuan_tac_phep_giao",
+        "thm:balance",
+        "thm:minkowski_canonical_form",
         "thm:solution_characterization",
         "thm:canonical_form_equivalence",
-        "thm:balance",
-        "thm:minkowski_canonical_form"
+        "prop:dang_chuan_tac_phep_giao"
     ],
-    "modified": "Sat Oct 3 01:17:28 2026",
+    "modified": "Sun Oct 4 03:13:34 2026",
     "packages": [
-        "#silence",
-        "utf8x#inputenc",
-        "#url",
-        "#amsthm",
-        "english#babel",
-        "#array",
-        "#mathtools",
-        "#color",
-        "a4paper,14pt, twoside#class-memoir",
-        "a4paper,14pt, twoside#latex-document",
-        "a4paper,14pt, twoside#latex-dev",
-        "a4paper,14pt, twoside#tex",
-        "a4paper,14pt, twoside#tabularx",
-        "a4paper,14pt, twoside#booktabs",
-        "a4paper,14pt, twoside#dcolumn",
-        "a4paper,14pt, twoside#delarray",
-        "a4paper,14pt, twoside#array",
         "#amsmath",
-        "#enumitem",
         "#autobreak",
-        "#booktabs",
+        "a4paper,12pt, twoside#class-memoir",
+        "a4paper,12pt, twoside#latex-document",
+        "a4paper,12pt, twoside#latex-dev",
+        "a4paper,12pt, twoside#tex",
+        "a4paper,12pt, twoside#tabularx",
+        "a4paper,12pt, twoside#booktabs",
+        "a4paper,12pt, twoside#dcolumn",
+        "a4paper,12pt, twoside#delarray",
+        "a4paper,12pt, twoside#array",
+        "utf8x#inputenc",
         "#microtype",
+        "#amsthm",
         "#amssymb",
         "#hyperref",
-        "#nameref"
+        "#nameref",
+        "english#babel",
+        "#array",
+        "#url",
+        "#color",
+        "#booktabs",
+        "#silence",
+        "#mathtools",
+        "#enumitem"
     ],
     "refs": [
         "dl:3.2",
@@ -58,8 +58,8 @@
         "1#Uncertain Arithmetic#306",
         "2#Introduction#308",
         "2#Uncertain Number#340",
-        "5#Step 1: Index Domain Compatibility.#693",
-        "5#Step 2: Set-Image Preservation.#702",
+        "5#Step 1: Index Domain Compatibility.#692",
+        "5#Step 2: Set-Image Preservation.#701",
         "2#Weighted Uncertain Numbers#1385",
         "1#Uncertain Algebra#1466",
         "2#Fundamental Mapping Concepts#1470",
@@ -74,27 +74,95 @@
     "usercommands": [
         [
             "",
-            "\\sum_{b \\in B}"
+            "\\int_{A}"
         ],
         [
             "",
-            "\\sum_{a \\in A}"
+            "\\mod{4}"
+        ],
+        [
+            "\\hpw",
+            "\\hpw{}{}"
         ],
         [
             "",
-            "\\sum_{(a, b) \\in A \\times B}"
-        ],
-        [
-            "definition",
-            "\\end{definition}"
-        ],
-        [
-            "definition",
-            "\\begin{definition}"
+            "\\sigma_2"
         ],
         [
             "",
-            "\\int_{[0, 1]^k}"
+            "\\sigma_1"
+        ],
+        [
+            "",
+            "\\bigcup_{k \\in K}"
+        ],
+        [
+            "",
+            "\\bigcup_{k \\in K}"
+        ],
+        [
+            "",
+            "\\sum_{a*b=c}"
+        ],
+        [
+            "\\tsbd",
+            "\\tsbd{}"
+        ],
+        [
+            "",
+            "\\circ_m"
+        ],
+        [
+            "",
+            "\\emptyset_s"
+        ],
+        [
+            "\\gtcl",
+            "\\gtcl{}{}"
+        ],
+        [
+            "",
+            "\\mathcal{Y}"
+        ],
+        [
+            "",
+            "\\mathcal{X}"
+        ],
+        [
+            "",
+            "\\mathcal{O}"
+        ],
+        [
+            "",
+            "\\bigcup_{a \\in A}"
+        ],
+        [
+            "",
+            "\\bigcup_{y \\in d_B}"
+        ],
+        [
+            "",
+            "\\bigcup_{b \\in B}"
+        ],
+        [
+            "",
+            "\\mathcal{Y}"
+        ],
+        [
+            "",
+            "\\mathcal{X}"
+        ],
+        [
+            "",
+            "\\mathbb{R}"
+        ],
+        [
+            "",
+            "\\mathbf{U}"
+        ],
+        [
+            "",
+            "\\sum_{i=1}"
         ],
         [
             "",
@@ -106,15 +174,51 @@
         ],
         [
             "",
-            "\\mathcal{F}"
+            "\\mathbb{R}"
         ],
         [
             "",
-            "\\prod_{i=1}"
+            "\\mathbb{K}"
         ],
         [
             "",
-            "\\circ_m"
+            "\\gamma_i"
+        ],
+        [
+            "",
+            "\\sum_{n=0}"
+        ],
+        [
+            "",
+            "\\exp_m"
+        ],
+        [
+            "\\s",
+            "\\s{}"
+        ],
+        [
+            "\\Sym",
+            "\\Sym"
+        ],
+        [
+            "",
+            "\\mathcal{R}"
+        ],
+        [
+            "",
+            "\\mathcal{R}"
+        ],
+        [
+            "",
+            "\\Delta_f"
+        ],
+        [
+            "",
+            "\\bigcup_{b \\in B}"
+        ],
+        [
+            "",
+            "\\mathcal{X}"
         ],
         [
             "",
@@ -122,11 +226,139 @@
         ],
         [
             "",
-            "\\sum_{a \\in A}"
+            "\\mathcal{X}"
         ],
         [
             "",
-            "\\circ_1"
+            "\\mathcal{X}"
+        ],
+        [
+            "\\card",
+            "\\card"
+        ],
+        [
+            "",
+            "\\mathcal{D}"
+        ],
+        [
+            "",
+            "\\mathbb{K}"
+        ],
+        [
+            "",
+            "\\bigcup_{k \\in K}"
+        ],
+        [
+            "",
+            "\\bigcup_{k \\in K}"
+        ],
+        [
+            "",
+            "\\mathbf{0}"
+        ],
+        [
+            "",
+            "\\mathbf{t}"
+        ],
+        [
+            "",
+            "\\mathbf{1}"
+        ],
+        [
+            "",
+            "\\mathbf{t}"
+        ],
+        [
+            "",
+            "\\boldsymbol{\\gamma}"
+        ],
+        [
+            "",
+            "\\Omega_P"
+        ],
+        [
+            "",
+            "\\circ_m"
+        ],
+        [
+            "",
+            "\\underbrace{(d_B \\times \\dots \\times d_B)}"
+        ],
+        [
+            "",
+            "\\underbrace{(d_A \\times \\dots \\times d_A)}"
+        ],
+        [
+            "",
+            "\\sum_{i=1}"
+        ],
+        [
+            "",
+            "\\sum_{i=1}"
+        ],
+        [
+            "",
+            "\\mod{3}"
+        ],
+        [
+            "",
+            "\\mathcal{Y}"
+        ],
+        [
+            "",
+            "\\mathcal{X}"
+        ],
+        [
+            "",
+            "\\mathcal{Y}"
+        ],
+        [
+            "",
+            "\\mathcal{X}"
+        ],
+        [
+            "",
+            "\\circ_m"
+        ],
+        [
+            "",
+            "\\mathcal{D}"
+        ],
+        [
+            "",
+            "\\mathcal{D}"
+        ],
+        [
+            "",
+            "\\sum_{k=1}"
+        ],
+        [
+            "",
+            "\\sum_{k=1}"
+        ],
+        [
+            "",
+            "\\bigcup_{k \\in K_s}"
+        ],
+        [
+            "",
+            "\\mathbb{R}"
+        ],
+        [
+            "",
+            "\\mathbb{K}"
+        ],
+        [
+            "",
+            "\\sum_{k=1}"
+        ],
+        [
+            "",
+            "\\sum_{k=1}"
+        ],
+        [
+            "\\w",
+            "\\w"
         ],
         [
             "",
@@ -138,27 +370,39 @@
         ],
         [
             "",
-            "\\Omega_Q"
+            "\\Omega_{P \\Rightarrow Q}"
         ],
         [
             "",
-            "\\Phi_{V(\\Phi)}"
+            "\\Omega_P"
         ],
         [
             "",
-            "\\sum_{a*b=c}"
+            "\\bigcup_{b \\in B}"
         ],
         [
             "",
-            "\\sum_{c \\in A*B}"
+            "\\mathbf{0}"
         ],
         [
             "",
-            "\\sum_{c \\in A*B}"
+            "\\boldsymbol{\\gamma}"
         ],
         [
-            "\\s",
-            "\\s{}"
+            "",
+            "\\prod_{i=1}"
+        ],
+        [
+            "",
+            "\\mathbb{K}"
+        ],
+        [
+            "",
+            "\\mathbf{U}"
+        ],
+        [
+            "",
+            "\\mathbb{K}"
         ],
         [
             "",
@@ -166,6 +410,46 @@
         ],
         [
             "",
+            "\\mathbb{N}"
+        ],
+        [
+            "",
+            "\\mathbb{K}"
+        ],
+        [
+            "",
+            "\\mathbb{K}"
+        ],
+        [
+            "",
+            "\\mathbf{U}"
+        ],
+        [
+            "",
+            "\\mathbb{K}"
+        ],
+        [
+            "",
+            "\\mathbb{K}"
+        ],
+        [
+            "",
+            "\\mathcal{F}"
+        ],
+        [
+            "",
+            "\\mathcal{F}"
+        ],
+        [
+            "",
+            "\\mathcal{F}"
+        ],
+        [
+            "",
+            "\\mathcal{F}"
+        ],
+        [
+            "",
             "\\mathbb{K}"
         ],
         [
@@ -178,11 +462,7 @@
         ],
         [
             "",
-            "\\mathcal{D}"
-        ],
-        [
-            "",
-            "\\mathcal{D}"
+            "\\mathbb{N}"
         ],
         [
             "",
@@ -190,119 +470,19 @@
         ],
         [
             "",
-            "\\mathcal{Y}"
-        ],
-        [
-            "",
-            "\\sum_{k=1}"
-        ],
-        [
-            "",
-            "\\sum_{k=1}"
-        ],
-        [
-            "",
-            "\\mathbf{1}"
-        ],
-        [
-            "",
-            "\\boldsymbol{\\gamma}"
-        ],
-        [
-            "\\kbd",
-            "\\kbd{}"
-        ],
-        [
-            "",
-            "\\sup_{b \\in B}"
-        ],
-        [
-            "",
-            "\\sup_{a \\in A}"
-        ],
-        [
-            "",
-            "\\circ_{m'}"
-        ],
-        [
-            "",
             "\\circ_m"
         ],
         [
             "",
-            "\\mathbb{K}"
-        ],
-        [
-            "",
-            "\\mathbb{K}"
-        ],
-        [
-            "",
             "\\mathbb{N}"
         ],
         [
             "",
-            "\\mathbb{N}"
+            "\\mathbf{CF}"
         ],
         [
             "",
-            "\\mathbf{y}"
-        ],
-        [
-            "",
-            "\\mathbf{x}"
-        ],
-        [
-            "",
-            "\\sum_{n=0}"
-        ],
-        [
-            "",
-            "\\circ_1"
-        ],
-        [
-            "",
-            "\\mathbb{K}"
-        ],
-        [
-            "",
-            "\\emptyset_s"
-        ],
-        [
-            "",
-            "\\emptyset_m"
-        ],
-        [
-            "",
-            "\\mathbb{N}"
-        ],
-        [
-            "",
-            "\\mathbb{N}"
-        ],
-        [
-            "",
-            "\\sup_{a_1, a_2 \\in A_s}"
-        ],
-        [
-            "",
-            "\\sup_{a_1, a_2 \\in A_s}"
-        ],
-        [
-            "",
-            "\\circ_{1'}"
-        ],
-        [
-            "",
-            "\\circ_1"
-        ],
-        [
-            "",
-            "\\mathcal{Y}"
-        ],
-        [
-            "",
-            "\\mathcal{X}"
+            "\\exp_m"
         ],
         [
             "",
@@ -322,871 +502,7 @@
         ],
         [
             "",
-            "\\sum_{i=1}"
-        ],
-        [
-            "",
-            "\\mathcal{X}"
-        ],
-        [
-            "",
-            "\\mathcal{Y}"
-        ],
-        [
-            "",
-            "\\mathcal{X}"
-        ],
-        [
-            "",
-            "\\bigcup_{k \\in K}"
-        ],
-        [
-            "",
-            "\\bigcup_{k \\in K}"
-        ],
-        [
-            "",
-            "\\Omega_Q"
-        ],
-        [
-            "",
-            "\\Omega_Q"
-        ],
-        [
-            "",
-            "\\Omega_P"
-        ],
-        [
-            "",
-            "\\circ_m"
-        ],
-        [
-            "",
-            "\\Omega_{P \\Rightarrow Q}"
-        ],
-        [
-            "",
-            "\\Omega_P"
-        ],
-        [
-            "",
-            "\\mathbb{N^*}"
-        ],
-        [
-            "",
-            "\\sup_{a_1, a_2 \\in A_s}"
-        ],
-        [
-            "",
-            "\\mathcal{Y}"
-        ],
-        [
-            "",
-            "\\mathcal{X}"
-        ],
-        [
-            "",
-            "\\sigma_2"
-        ],
-        [
-            "",
-            "\\sigma_1"
-        ],
-        [
-            "",
-            "\\mathbf{0}"
-        ],
-        [
-            "",
-            "\\boldsymbol{\\gamma}"
-        ],
-        [
-            "",
-            "\\mathbf{1}"
-        ],
-        [
-            "",
-            "\\boldsymbol{\\gamma}"
-        ],
-        [
-            "",
-            "\\circ_1"
-        ],
-        [
-            "\\kgdd",
-            "\\kgdd{}"
-        ],
-        [
-            "",
-            "\\limits_{X \\rightarrow X_0}"
-        ],
-        [
-            "remark",
-            "\\end{remark}"
-        ],
-        [
-            "remark",
-            "\\begin{remark}"
-        ],
-        [
-            "",
-            "\\sum_{k=1}"
-        ],
-        [
-            "",
-            "\\sum_{k=1}"
-        ],
-        [
-            "",
-            "\\mathbf{y}"
-        ],
-        [
-            "",
-            "\\mathbf{x}"
-        ],
-        [
-            "",
-            "\\mathcal{Y}"
-        ],
-        [
-            "",
-            "\\mathcal{X}"
-        ],
-        [
-            "",
-            "\\mathbb{K}"
-        ],
-        [
-            "",
-            "\\mathbb{K}"
-        ],
-        [
-            "",
-            "\\mathbf{U}"
-        ],
-        [
-            "\\set",
-            "\\set{}"
-        ],
-        [
-            "",
-            "\\emptyset_m"
-        ],
-        [
-            "",
-            "\\emptyset_m"
-        ],
-        [
-            "",
-            "\\mathcal{Y}"
-        ],
-        [
-            "",
-            "\\mathcal{X}"
-        ],
-        [
-            "",
-            "\\mathcal{Y}"
-        ],
-        [
-            "",
-            "\\mathcal{X}"
-        ],
-        [
-            "",
-            "\\mathbf{CF}"
-        ],
-        [
-            "",
-            "\\mathcal{R}"
-        ],
-        [
-            "",
-            "\\mathbb{R}"
-        ],
-        [
-            "",
-            "\\sum_{k=1}"
-        ],
-        [
-            "",
-            "\\mathbb{N}"
-        ],
-        [
-            "",
-            "\\underbrace{(d_B \\times \\dots \\times d_B)}"
-        ],
-        [
-            "",
-            "\\underbrace{(d_A \\times \\dots \\times d_A)}"
-        ],
-        [
-            "",
-            "\\mathcal{R}"
-        ],
-        [
-            "",
-            "\\mathcal{R}"
-        ],
-        [
-            "",
-            "\\int_{\\s{1,2}}"
-        ],
-        [
-            "\\hbd",
-            "\\hbd{}{}"
-        ],
-        [
-            "",
-            "\\mathcal{D}"
-        ],
-        [
-            "",
-            "\\mathcal{D}"
-        ],
-        [
-            "",
-            "\\circ_m"
-        ],
-        [
-            "corollary",
-            "\\end{corollary}"
-        ],
-        [
-            "corollary",
-            "\\begin{corollary}"
-        ],
-        [
-            "\\Tr",
-            "\\Tr"
-        ],
-        [
-            "",
-            "\\sum_{k=1}"
-        ],
-        [
-            "",
-            "\\mathbb{R}"
-        ],
-        [
-            "",
-            "\\mathbf{U}"
-        ],
-        [
-            "\\bd",
-            "\\bd{}"
-        ],
-        [
-            "\\arraystretch",
-            "\\arraystretch"
-        ],
-        [
-            "",
-            "\\circ_1"
-        ],
-        [
-            "",
-            "\\sup_{a_1, a_2 \\in A_s}"
-        ],
-        [
-            "",
-            "\\sup_{a_2, a_1 \\in A_s}"
-        ],
-        [
-            "",
-            "\\sup_{a_1, a_2 \\in A_s}"
-        ],
-        [
-            "",
-            "\\limits_{X \\rightarrow X_0}"
-        ],
-        [
-            "",
-            "\\bigcup_{k \\in K}"
-        ],
-        [
-            "",
-            "\\bigcup_{k \\in K}"
-        ],
-        [
-            "",
-            "\\sup_{a_1, a_2 \\in A_s}"
-        ],
-        [
-            "\\hpw",
-            "\\hpw{}{}"
-        ],
-        [
-            "",
-            "\\mathbb{K}"
-        ],
-        [
-            "",
-            "\\mathcal{Y}"
-        ],
-        [
-            "",
-            "\\mathcal{X}"
-        ],
-        [
-            "\\kgddmr",
-            "\\kgddmr{}"
-        ],
-        [
-            "",
-            "\\Omega_P"
-        ],
-        [
-            "theorem",
-            "\\end{theorem}"
-        ],
-        [
-            "theorem",
-            "\\begin{theorem}"
-        ],
-        [
-            "",
-            "\\sum_{k=1}"
-        ],
-        [
-            "\\tbd",
-            "\\tbd{}"
-        ],
-        [
-            "",
-            "\\mathcal{D}"
-        ],
-        [
-            "\\Sym",
-            "\\Sym"
-        ],
-        [
-            "",
-            "\\sum_{i=1}"
-        ],
-        [
-            "",
-            "\\mathcal{O}"
-        ],
-        [
-            "",
-            "\\mathbb{K}"
-        ],
-        [
-            "",
-            "\\mathcal{Y}"
-        ],
-        [
-            "",
-            "\\mathcal{X}"
-        ],
-        [
-            "",
-            "\\mathbb{R}"
-        ],
-        [
-            "",
-            "\\sum_{c \\in A*B}"
-        ],
-        [
-            "",
-            "\\mathcal{X}"
-        ],
-        [
-            "",
-            "\\mathcal{Y}"
-        ],
-        [
-            "",
-            "\\mathcal{X}"
-        ],
-        [
-            "",
-            "\\mathcal{X}"
-        ],
-        [
-            "",
-            "\\mathcal{Y}"
-        ],
-        [
-            "",
-            "\\mathcal{X}"
-        ],
-        [
-            "",
-            "\\mathbf{CF}"
-        ],
-        [
-            "",
-            "\\circ_1"
-        ],
-        [
-            "",
-            "\\mathbb{K}"
-        ],
-        [
-            "",
-            "\\sum_{a*b=c}"
-        ],
-        [
-            "",
-            "\\mathbf{CF}"
-        ],
-        [
-            "",
-            "\\mathbf{CF}"
-        ],
-        [
-            "",
-            "\\mathbb{K}"
-        ],
-        [
-            "",
-            "\\mathcal{F}"
-        ],
-        [
-            "",
-            "\\mathcal{F}"
-        ],
-        [
-            "",
-            "\\mathcal{F}"
-        ],
-        [
-            "",
-            "\\mathcal{F}"
-        ],
-        [
-            "",
-            "\\mathbb{N}"
-        ],
-        [
-            "",
-            "\\sum_{k=1}"
-        ],
-        [
-            "",
-            "\\mathcal{X}"
-        ],
-        [
-            "",
-            "\\mathbb{K}"
-        ],
-        [
-            "",
-            "\\Omega_Q"
-        ],
-        [
-            "",
-            "\\Omega_P"
-        ],
-        [
-            "",
-            "\\Omega_{P \\Rightarrow Q}"
-        ],
-        [
-            "",
-            "\\Omega_P"
-        ],
-        [
-            "\\pr",
-            "\\pr"
-        ],
-        [
-            "",
-            "\\sup_{b_1, b_2 \\in B_s}"
-        ],
-        [
-            "",
-            "\\sup_{a_1, a_2 \\in A_s}"
-        ],
-        [
-            "",
-            "\\bigcup_{k \\in K_s}"
-        ],
-        [
-            "",
-            "\\mathcal{F}"
-        ],
-        [
-            "",
-            "\\Omega_{P \\Rightarrow Q}"
-        ],
-        [
-            "",
-            "\\Omega_P"
-        ],
-        [
-            "",
-            "\\Omega_Q"
-        ],
-        [
-            "",
-            "\\Omega_{P \\Rightarrow Q}"
-        ],
-        [
-            "",
-            "\\Omega_P"
-        ],
-        [
-            "",
-            "\\Omega_{P \\Rightarrow Q}"
-        ],
-        [
-            "",
-            "\\Omega_P"
-        ],
-        [
-            "",
-            "\\Omega_Q"
-        ],
-        [
-            "",
-            "\\inf_{b\\in A}"
-        ],
-        [
-            "",
-            "\\bigcup_{b \\in B}"
-        ],
-        [
-            "",
-            "\\mathbf{0}"
-        ],
-        [
-            "",
-            "\\mathbf{t}"
-        ],
-        [
-            "",
-            "\\mathbf{1}"
-        ],
-        [
-            "",
-            "\\mathbf{t}"
-        ],
-        [
-            "",
-            "\\boldsymbol{\\gamma}"
-        ],
-        [
-            "",
-            "\\mathbb{K}"
-        ],
-        [
-            "\\w",
-            "\\w"
-        ],
-        [
-            "",
-            "\\mathbb{R}"
-        ],
-        [
-            "",
-            "\\mod{3}"
-        ],
-        [
-            "",
-            "\\mathbf{CF}"
-        ],
-        [
-            "",
-            "\\mathbb{K}"
-        ],
-        [
-            "",
-            "\\mathbf{U}"
-        ],
-        [
-            "",
-            "\\sup_{b_1, b_2 \\in B_s}"
-        ],
-        [
-            "",
-            "\\sup_{a_1, a_2 \\in A_s}"
-        ],
-        [
-            "",
-            "\\sup_{z_1, z_2 \\in (A + B)_s}"
-        ],
-        [
-            "",
-            "\\mathcal{Y}"
-        ],
-        [
-            "",
-            "\\mathcal{X}"
-        ],
-        [
-            "",
-            "\\mod{4}"
-        ],
-        [
-            "",
-            "\\circ_m"
-        ],
-        [
-            "\\setu",
-            "\\setu"
-        ],
-        [
-            "",
-            "\\mathbb{R}"
-        ],
-        [
-            "",
-            "\\bigcup_{b \\in B_s}"
-        ],
-        [
-            "",
-            "\\bigcup_{b \\in B_s}"
-        ],
-        [
-            "",
-            "\\right_s"
-        ],
-        [
-            "",
-            "\\bigcup_{b \\in B}"
-        ],
-        [
-            "",
-            "\\mathbb{N^*}"
-        ],
-        [
-            "",
-            "\\bigcup_{b \\in B_s}"
-        ],
-        [
-            "",
-            "\\mathbb{K}"
-        ],
-        [
-            "",
-            "\\mathbf{U}"
-        ],
-        [
-            "",
-            "\\circ_m"
-        ],
-        [
-            "",
-            "\\mathbb{K}"
-        ],
-        [
-            "",
-            "\\mathbf{CF}"
-        ],
-        [
-            "",
-            "\\mathbb{K}"
-        ],
-        [
-            "",
-            "\\mathbb{K}"
-        ],
-        [
-            "",
-            "\\mathbb{K}"
-        ],
-        [
-            "",
-            "\\circ_m"
-        ],
-        [
-            "",
-            "\\circ_{m'}"
-        ],
-        [
-            "",
-            "\\mathbb{K}"
-        ],
-        [
-            "",
-            "\\bigcup_{y \\in d_B}"
-        ],
-        [
-            "",
-            "\\exp_m"
-        ],
-        [
-            "",
-            "\\bigcup_{k \\in K}"
-        ],
-        [
-            "",
-            "\\bigcup_{k \\in K}"
-        ],
-        [
-            "",
-            "\\underbrace{d_X \\times d_X \\times \\dots \\times d_X}"
-        ],
-        [
-            "",
-            "\\bigcup_{k \\in K}"
-        ],
-        [
-            "",
-            "\\bigcup_{k \\in K}"
-        ],
-        [
-            "",
-            "\\mathcal{F}"
-        ],
-        [
-            "",
-            "\\mathbb{K}"
-        ],
-        [
-            "",
-            "\\Omega_Q"
-        ],
-        [
-            "",
-            "\\Omega_P"
-        ],
-        [
-            "",
-            "\\mathbb{K}"
-        ],
-        [
-            "",
-            "\\emptyset_s"
-        ],
-        [
-            "",
-            "\\mathbb{N}"
-        ],
-        [
-            "",
-            "\\mathbb{K}"
-        ],
-        [
-            "",
-            "\\bigcup_{k \\in K_s}"
-        ],
-        [
-            "",
-            "\\Omega_{P \\Rightarrow Q}"
-        ],
-        [
-            "",
-            "\\mathbb{N}"
-        ],
-        [
-            "",
-            "\\mathbb{N}"
-        ],
-        [
-            "",
-            "\\mathbb{R}"
-        ],
-        [
-            "",
-            "\\mathbb{R}"
-        ],
-        [
-            "",
-            "\\circ_m"
-        ],
-        [
-            "",
-            "\\mathbb{K}"
-        ],
-        [
-            "",
-            "\\mathbb{K}"
-        ],
-        [
-            "",
-            "\\circ_m"
-        ],
-        [
-            "",
-            "\\mathbf{CF}"
-        ],
-        [
-            "",
-            "\\circ_m"
-        ],
-        [
-            "",
-            "\\mathbb{K}"
-        ],
-        [
-            "",
-            "\\lim_{h\\rightarrow 0}"
-        ],
-        [
-            "",
-            "\\Delta_f"
-        ],
-        [
-            "",
-            "\\lim_{h\\rightarrow 0}"
-        ],
-        [
-            "example",
-            "\\end{example}"
-        ],
-        [
-            "example",
-            "\\begin{example}"
-        ],
-        [
-            "",
-            "\\bigcup_{k \\in K}"
-        ],
-        [
-            "",
-            "\\bigcup_{k \\in K}"
-        ],
-        [
-            "",
-            "\\mathcal{X}"
-        ],
-        [
-            "",
-            "\\mathcal{Y}"
-        ],
-        [
-            "",
-            "\\mathcal{X}"
-        ],
-        [
-            "",
-            "\\mathbb{R}"
-        ],
-        [
-            "",
-            "\\mathbb{K}"
-        ],
-        [
-            "",
-            "\\gamma_i"
-        ],
-        [
-            "",
-            "\\circ_m"
-        ],
-        [
-            "",
-            "\\circ_1"
-        ],
-        [
-            "\\ddclmd",
-            "\\ddclmd"
-        ],
-        [
-            "",
-            "\\circ_m"
-        ],
-        [
-            "",
-            "\\mathcal{R}"
-        ],
-        [
-            "",
-            "\\Delta_f"
+            "\\circ_{1'}"
         ],
         [
             "\\tsbdcapn",
@@ -1214,31 +530,35 @@
         ],
         [
             "",
-            "\\sum_{b \\in B}"
+            "\\bigcup_{k \\in K}"
         ],
         [
             "",
-            "\\sum_{a \\in A}"
+            "\\bigcup_{k \\in K}"
         ],
         [
             "",
-            "\\circ_1"
+            "\\mathbb{N}"
+        ],
+        [
+            "\\set",
+            "\\set{}"
         ],
         [
             "",
-            "\\sum_{k=1}"
+            "\\mathcal{R}"
         ],
         [
             "",
-            "\\sum_{k=1}"
+            "\\mathcal{Y}"
+        ],
+        [
+            "",
+            "\\mathcal{X}"
         ],
         [
             "",
             "\\mathbb{K}"
-        ],
-        [
-            "",
-            "\\mathbf{U}"
         ],
         [
             "",
@@ -1250,11 +570,615 @@
         ],
         [
             "",
-            "\\Omega_{P \\Rightarrow Q}"
+            "\\mathcal{X}"
+        ],
+        [
+            "",
+            "\\mathcal{Y}"
+        ],
+        [
+            "",
+            "\\mod{\\s}"
+        ],
+        [
+            "\\Tr",
+            "\\Tr"
+        ],
+        [
+            "",
+            "\\mathbf{y}"
+        ],
+        [
+            "",
+            "\\mathbf{x}"
+        ],
+        [
+            "",
+            "\\mathbf{y}"
+        ],
+        [
+            "",
+            "\\mathbf{x}"
+        ],
+        [
+            "",
+            "\\sum_{b \\in B}"
+        ],
+        [
+            "",
+            "\\sum_{a \\in A}"
+        ],
+        [
+            "corollary",
+            "\\end{corollary}"
+        ],
+        [
+            "corollary",
+            "\\begin{corollary}"
+        ],
+        [
+            "\\setu",
+            "\\setu"
+        ],
+        [
+            "",
+            "\\bigcup_{k \\in K_s}"
+        ],
+        [
+            "\\kgdtmr",
+            "\\kgdtmr{}"
+        ],
+        [
+            "",
+            "\\mathcal{X}"
+        ],
+        [
+            "",
+            "\\mathcal{Y}"
+        ],
+        [
+            "",
+            "\\mathcal{X}"
         ],
         [
             "",
             "\\mathbb{R}"
+        ],
+        [
+            "",
+            "\\mathbb{R}"
+        ],
+        [
+            "",
+            "\\mathcal{X}"
+        ],
+        [
+            "",
+            "\\mathcal{Y}"
+        ],
+        [
+            "",
+            "\\mathcal{X}"
+        ],
+        [
+            "",
+            "\\sum_{c \\in A*B}"
+        ],
+        [
+            "",
+            "\\mathbf{CF}"
+        ],
+        [
+            "",
+            "\\sum_{n=0}"
+        ],
+        [
+            "",
+            "\\mathbb{N}"
+        ],
+        [
+            "",
+            "\\mathcal{Y}"
+        ],
+        [
+            "",
+            "\\sum_{k=1}"
+        ],
+        [
+            "",
+            "\\mathbb{N}"
+        ],
+        [
+            "",
+            "\\mathbf{t}"
+        ],
+        [
+            "",
+            "\\gamma_k"
+        ],
+        [
+            "",
+            "\\gamma_1"
+        ],
+        [
+            "",
+            "\\mathbf{t}"
+        ],
+        [
+            "",
+            "\\boldsymbol{\\gamma}"
+        ],
+        [
+            "\\scale",
+            "\\scale"
+        ],
+        [
+            "",
+            "\\right_s"
+        ],
+        [
+            "",
+            "\\bigcup_{b \\in B}"
+        ],
+        [
+            "",
+            "\\sup_{a_1, a_2 \\in A_s}"
+        ],
+        [
+            "",
+            "\\sup_{a_2, a_1 \\in A_s}"
+        ],
+        [
+            "",
+            "\\sup_{a_1, a_2 \\in A_s}"
+        ],
+        [
+            "",
+            "\\sup_{a_1, a_2 \\in A_s}"
+        ],
+        [
+            "",
+            "\\emptyset_s"
+        ],
+        [
+            "",
+            "\\emptyset_s"
+        ],
+        [
+            "",
+            "\\mathbb{R}"
+        ],
+        [
+            "",
+            "\\mathbb{N}"
+        ],
+        [
+            "",
+            "\\sum_{k=1}"
+        ],
+        [
+            "",
+            "\\mathbb{K}"
+        ],
+        [
+            "",
+            "\\mathbb{K}"
+        ],
+        [
+            "",
+            "\\mathbb{K}"
+        ],
+        [
+            "",
+            "\\mathcal{Y}"
+        ],
+        [
+            "",
+            "\\mathcal{X}"
+        ],
+        [
+            "",
+            "\\mathcal{R}"
+        ],
+        [
+            "",
+            "\\bigcup_{b \\in B_s}"
+        ],
+        [
+            "",
+            "\\mathbb{R}"
+        ],
+        [
+            "\\tbd",
+            "\\tbd{}"
+        ],
+        [
+            "",
+            "\\mathcal{Y}"
+        ],
+        [
+            "",
+            "\\mathcal{Y}"
+        ],
+        [
+            "",
+            "\\mathcal{X}"
+        ],
+        [
+            "",
+            "\\int_A"
+        ],
+        [
+            "",
+            "\\mathbb{K}"
+        ],
+        [
+            "",
+            "\\circ_m"
+        ],
+        [
+            "",
+            "\\circ_m"
+        ],
+        [
+            "",
+            "\\mathbb{N}"
+        ],
+        [
+            "",
+            "\\sum_{k=1}"
+        ],
+        [
+            "",
+            "\\mathcal{X}"
+        ],
+        [
+            "",
+            "\\circ_m"
+        ],
+        [
+            "",
+            "\\circ_1"
+        ],
+        [
+            "",
+            "\\Omega_{P \\Rightarrow Q}"
+        ],
+        [
+            "",
+            "\\Omega_P"
+        ],
+        [
+            "",
+            "\\Omega_Q"
+        ],
+        [
+            "\\ts",
+            "\\ts{}"
+        ],
+        [
+            "",
+            "\\limits_{X \\rightarrow X_0}"
+        ],
+        [
+            "",
+            "\\mathcal{R}"
+        ],
+        [
+            "",
+            "\\mathbb{K}"
+        ],
+        [
+            "",
+            "\\limits_{X \\rightarrow X_0}"
+        ],
+        [
+            "",
+            "\\mathcal{R}"
+        ],
+        [
+            "",
+            "\\circ_1"
+        ],
+        [
+            "",
+            "\\mathcal{X}"
+        ],
+        [
+            "",
+            "\\mathcal{Y}"
+        ],
+        [
+            "",
+            "\\mathcal{X}"
+        ],
+        [
+            "\\arraystretch",
+            "\\arraystretch"
+        ],
+        [
+            "",
+            "\\mathbf{y}"
+        ],
+        [
+            "",
+            "\\mathbf{x}"
+        ],
+        [
+            "",
+            "\\sup_{a_1, a_2 \\in A_s}"
+        ],
+        [
+            "",
+            "\\sup_{z_1, z_2 \\in (A + b)_s}"
+        ],
+        [
+            "",
+            "\\circ_m"
+        ],
+        [
+            "\\eq",
+            "\\eq{}"
+        ],
+        [
+            "",
+            "\\sum_{k=1}"
+        ],
+        [
+            "",
+            "\\circ_m"
+        ],
+        [
+            "",
+            "\\circ_{m'}"
+        ],
+        [
+            "",
+            "\\mathbb{K}"
+        ],
+        [
+            "",
+            "\\emptyset_s"
+        ],
+        [
+            "",
+            "\\emptyset_m"
+        ],
+        [
+            "",
+            "\\mathbb{K}"
+        ],
+        [
+            "",
+            "\\int_{[0, 1]^k}"
+        ],
+        [
+            "",
+            "\\mathbf{y}"
+        ],
+        [
+            "",
+            "\\mathbf{x}"
+        ],
+        [
+            "",
+            "\\mathbb{R}"
+        ],
+        [
+            "",
+            "\\exp_m"
+        ],
+        [
+            "",
+            "\\int_{\\s{1,2}}"
+        ],
+        [
+            "\\tsbdts",
+            "\\tsbdts{}"
+        ],
+        [
+            "",
+            "\\circ_1"
+        ],
+        [
+            "",
+            "\\mathbb{N}"
+        ],
+        [
+            "",
+            "\\mathbb{N}"
+        ],
+        [
+            "",
+            "\\mathcal{F}"
+        ],
+        [
+            "",
+            "\\int_{A}"
+        ],
+        [
+            "",
+            "\\int_{A}"
+        ],
+        [
+            "",
+            "\\mathbb{N}"
+        ],
+        [
+            "",
+            "\\sup_{b \\in B}"
+        ],
+        [
+            "",
+            "\\sup_{a \\in A}"
+        ],
+        [
+            "",
+            "\\emptyset_m"
+        ],
+        [
+            "",
+            "\\emptyset_m"
+        ],
+        [
+            "",
+            "\\Omega_{P \\Rightarrow Q}"
+        ],
+        [
+            "",
+            "\\Omega_P"
+        ],
+        [
+            "",
+            "\\circ_m"
+        ],
+        [
+            "",
+            "\\circ_1"
+        ],
+        [
+            "",
+            "\\sum_{(a, b) \\in A \\times B}"
+        ],
+        [
+            "",
+            "\\sum_{a*b=c}"
+        ],
+        [
+            "",
+            "\\sum_{c \\in A*B}"
+        ],
+        [
+            "",
+            "\\mathbb{K}"
+        ],
+        [
+            "\\gr",
+            "\\gr{}"
+        ],
+        [
+            "",
+            "\\circ_m"
+        ],
+        [
+            "",
+            "\\mathbb{R}"
+        ],
+        [
+            "",
+            "\\mathbb{K}"
+        ],
+        [
+            "",
+            "\\mathcal{X}"
+        ],
+        [
+            "",
+            "\\mathcal{Y}"
+        ],
+        [
+            "",
+            "\\mathcal{X}"
+        ],
+        [
+            "",
+            "\\bigcup_{k \\in K}"
+        ],
+        [
+            "",
+            "\\bigcup_{k \\in K}"
+        ],
+        [
+            "",
+            "\\mathbf{CF}"
+        ],
+        [
+            "",
+            "\\mathbb{R}"
+        ],
+        [
+            "",
+            "\\Omega_{P \\Rightarrow Q}"
+        ],
+        [
+            "",
+            "\\Omega_P"
+        ],
+        [
+            "",
+            "\\Omega_{P \\Rightarrow Q}"
+        ],
+        [
+            "",
+            "\\circ_m"
+        ],
+        [
+            "",
+            "\\mathbb{K}"
+        ],
+        [
+            "",
+            "\\mathbb{K}"
+        ],
+        [
+            "",
+            "\\mathcal{Y}"
+        ],
+        [
+            "",
+            "\\mathcal{X}"
+        ],
+        [
+            "",
+            "\\mathbf{y}"
+        ],
+        [
+            "",
+            "\\mathbf{x}"
+        ],
+        [
+            "",
+            "\\mathcal{Y}"
+        ],
+        [
+            "",
+            "\\mathcal{X}"
+        ],
+        [
+            "\\ddclmd",
+            "\\ddclmd"
+        ],
+        [
+            "",
+            "\\mathcal{R}"
+        ],
+        [
+            "",
+            "\\mathcal{F}"
+        ],
+        [
+            "",
+            "\\circ_m"
+        ],
+        [
+            "",
+            "\\int_{[0, 1]^k}"
+        ],
+        [
+            "",
+            "\\mathbf{y}"
+        ],
+        [
+            "",
+            "\\mathbf{x}"
+        ],
+        [
+            "",
+            "\\circ_m"
+        ],
+        [
+            "\\kgdd",
+            "\\kgdd{}"
         ],
         [
             "",
@@ -1270,83 +1194,7 @@
         ],
         [
             "",
-            "\\int_A"
-        ],
-        [
-            "",
-            "\\circ_1"
-        ],
-        [
-            "",
-            "\\mathcal{F}"
-        ],
-        [
-            "",
-            "\\mathcal{D}"
-        ],
-        [
-            "",
-            "\\circ_m"
-        ],
-        [
-            "",
-            "\\mathbf{y}"
-        ],
-        [
-            "",
-            "\\mathbf{x}"
-        ],
-        [
-            "",
-            "\\mathbf{y}"
-        ],
-        [
-            "",
-            "\\mathbf{x}"
-        ],
-        [
-            "",
-            "\\mathbb{K}"
-        ],
-        [
-            "",
-            "\\right_s"
-        ],
-        [
-            "",
-            "\\bigcup_{b \\in B}"
-        ],
-        [
-            "",
-            "\\mathbb{R}"
-        ],
-        [
-            "",
-            "\\sum_{a*b=c}"
-        ],
-        [
-            "",
-            "\\mathbb{K}"
-        ],
-        [
-            "",
-            "\\lim_{n \\to \\infty}"
-        ],
-        [
-            "",
-            "\\sup_{a_1, a_2 \\in A_s}"
-        ],
-        [
-            "",
-            "\\sup_{z_1, z_2 \\in (A + b)_s}"
-        ],
-        [
-            "",
-            "\\bigcup_{k \\in K}"
-        ],
-        [
-            "",
-            "\\bigcup_{k \\in K}"
+            "\\mathcal{Y}"
         ],
         [
             "",
@@ -1358,59 +1206,11 @@
         ],
         [
             "",
+            "\\mathcal{Y}"
+        ],
+        [
+            "",
             "\\mathcal{X}"
-        ],
-        [
-            "\\tsbd",
-            "\\tsbd{}"
-        ],
-        [
-            "",
-            "\\Omega_Q"
-        ],
-        [
-            "",
-            "\\Omega_Q"
-        ],
-        [
-            "",
-            "\\Omega_P"
-        ],
-        [
-            "",
-            "\\Omega_{P \\Rightarrow Q}"
-        ],
-        [
-            "",
-            "\\Omega_P"
-        ],
-        [
-            "",
-            "\\circ_m"
-        ],
-        [
-            "",
-            "\\circ_{1'}"
-        ],
-        [
-            "",
-            "\\mathbb{K}"
-        ],
-        [
-            "",
-            "\\mathbb{K}"
-        ],
-        [
-            "",
-            "\\mathbf{U}"
-        ],
-        [
-            "",
-            "\\mathcal{R}"
-        ],
-        [
-            "",
-            "\\mathcal{F}"
         ],
         [
             "",
@@ -1418,7 +1218,27 @@
         ],
         [
             "",
-            "\\exp_m"
+            "\\circ_m"
+        ],
+        [
+            "",
+            "\\mathcal{Y}"
+        ],
+        [
+            "",
+            "\\mathcal{X}"
+        ],
+        [
+            "\\dimU",
+            "\\dimU"
+        ],
+        [
+            "",
+            "\\mathbb{K}"
+        ],
+        [
+            "",
+            "\\mathbb{K}"
         ],
         [
             "",
@@ -1427,66 +1247,6 @@
         [
             "",
             "\\bigcup_{x \\in A}"
-        ],
-        [
-            "",
-            "\\mathbb{R}"
-        ],
-        [
-            "",
-            "\\bigcup_{a \\in A}"
-        ],
-        [
-            "proposition",
-            "\\end{proposition}"
-        ],
-        [
-            "proposition",
-            "\\begin{proposition}"
-        ],
-        [
-            "",
-            "\\circ_1"
-        ],
-        [
-            "",
-            "\\mathbf{CF}"
-        ],
-        [
-            "",
-            "\\mathcal{X}"
-        ],
-        [
-            "",
-            "\\mathcal{Y}"
-        ],
-        [
-            "",
-            "\\mathcal{X}"
-        ],
-        [
-            "",
-            "\\mathbb{K}"
-        ],
-        [
-            "",
-            "\\mathbb{R}"
-        ],
-        [
-            "",
-            "\\mathbb{R}"
-        ],
-        [
-            "\\card",
-            "\\card"
-        ],
-        [
-            "",
-            "\\circ_{m'}"
-        ],
-        [
-            "\\pgr",
-            "\\pgr"
         ],
         [
             "",
@@ -1518,6 +1278,374 @@
         ],
         [
             "",
+            "\\mathbb{K}"
+        ],
+        [
+            "",
+            "\\mathbf{y}"
+        ],
+        [
+            "",
+            "\\mathbf{x}"
+        ],
+        [
+            "",
+            "\\bigcup_{k \\in K}"
+        ],
+        [
+            "",
+            "\\bigcup_{k \\in K}"
+        ],
+        [
+            "",
+            "\\circ_m"
+        ],
+        [
+            "",
+            "\\int_A"
+        ],
+        [
+            "",
+            "\\mathcal{X}"
+        ],
+        [
+            "",
+            "\\mathcal{F}"
+        ],
+        [
+            "",
+            "\\Omega_{P \\Rightarrow Q}"
+        ],
+        [
+            "",
+            "\\Omega_P"
+        ],
+        [
+            "",
+            "\\Omega_{P \\Rightarrow Q}"
+        ],
+        [
+            "",
+            "\\Omega_P"
+        ],
+        [
+            "",
+            "\\mathbb{N^*}"
+        ],
+        [
+            "",
+            "\\mathcal{Y}"
+        ],
+        [
+            "",
+            "\\mathbb{R}"
+        ],
+        [
+            "",
+            "\\circ_m"
+        ],
+        [
+            "",
+            "\\circ_m"
+        ],
+        [
+            "",
+            "\\circ_{m'}"
+        ],
+        [
+            "",
+            "\\mathbb{K}"
+        ],
+        [
+            "",
+            "\\sigma_3"
+        ],
+        [
+            "",
+            "\\sigma_2"
+        ],
+        [
+            "",
+            "\\sigma_1"
+        ],
+        [
+            "",
+            "\\sigma_3"
+        ],
+        [
+            "",
+            "\\circ_1"
+        ],
+        [
+            "",
+            "\\bigcup_{k \\in K}"
+        ],
+        [
+            "",
+            "\\bigcup_{k \\in K}"
+        ],
+        [
+            "",
+            "\\mathbf{0}"
+        ],
+        [
+            "",
+            "\\boldsymbol{\\gamma}"
+        ],
+        [
+            "",
+            "\\mathbf{1}"
+        ],
+        [
+            "",
+            "\\boldsymbol{\\gamma}"
+        ],
+        [
+            "",
+            "\\circ_m"
+        ],
+        [
+            "",
+            "\\mathbb{K}"
+        ],
+        [
+            "",
+            "\\circ_m"
+        ],
+        [
+            "",
+            "\\mathbb{K}"
+        ],
+        [
+            "",
+            "\\mathbb{K}"
+        ],
+        [
+            "",
+            "\\mathcal{D}"
+        ],
+        [
+            "",
+            "\\bigcup_{b \\in B_s}"
+        ],
+        [
+            "",
+            "\\bigcup_{b \\in B_s}"
+        ],
+        [
+            "",
+            "\\right_s"
+        ],
+        [
+            "",
+            "\\bigcup_{b \\in B}"
+        ],
+        [
+            "",
+            "\\mathbb{K}"
+        ],
+        [
+            "",
+            "\\circ_m"
+        ],
+        [
+            "",
+            "\\mathcal{F}"
+        ],
+        [
+            "",
+            "\\circ_{1'}"
+        ],
+        [
+            "",
+            "\\circ_1"
+        ],
+        [
+            "",
+            "\\sum_{i=1}"
+        ],
+        [
+            "",
+            "\\sum_{i=1}"
+        ],
+        [
+            "",
+            "\\mathcal{Y}"
+        ],
+        [
+            "",
+            "\\mathcal{X}"
+        ],
+        [
+            "",
+            "\\mathbb{K}"
+        ],
+        [
+            "",
+            "\\mathcal{D}"
+        ],
+        [
+            "",
+            "\\Omega_Q"
+        ],
+        [
+            "",
+            "\\Omega_Q"
+        ],
+        [
+            "",
+            "\\Omega_P"
+        ],
+        [
+            "",
+            "\\mathbb{K}"
+        ],
+        [
+            "",
+            "\\mathbf{U}"
+        ],
+        [
+            "",
+            "\\sup_{a_1, a_2 \\in A_s}"
+        ],
+        [
+            "",
+            "\\mathcal{X}"
+        ],
+        [
+            "",
+            "\\circ_1"
+        ],
+        [
+            "",
+            "\\mathrm{u}"
+        ],
+        [
+            "",
+            "\\mathrm{u}"
+        ],
+        [
+            "",
+            "\\mathbf{1}"
+        ],
+        [
+            "",
+            "\\boldsymbol{\\gamma}"
+        ],
+        [
+            "",
+            "\\mathbb{R}"
+        ],
+        [
+            "theorem",
+            "\\end{theorem}"
+        ],
+        [
+            "theorem",
+            "\\begin{theorem}"
+        ],
+        [
+            "",
+            "\\circ_m"
+        ],
+        [
+            "",
+            "\\mathbb{K}"
+        ],
+        [
+            "",
+            "\\mathbf{U}"
+        ],
+        [
+            "",
+            "\\mathbb{R}"
+        ],
+        [
+            "",
+            "\\sigma_2"
+        ],
+        [
+            "",
+            "\\sigma_1"
+        ],
+        [
+            "",
+            "\\sum_{i=1}"
+        ],
+        [
+            "",
+            "\\circ_{m'}"
+        ],
+        [
+            "",
+            "\\sup_{a_1, a_2 \\in A_s}"
+        ],
+        [
+            "example",
+            "\\end{example}"
+        ],
+        [
+            "example",
+            "\\begin{example}"
+        ],
+        [
+            "",
+            "\\Omega_Q"
+        ],
+        [
+            "",
+            "\\Omega_P"
+        ],
+        [
+            "",
+            "\\sum_{i=1}"
+        ],
+        [
+            "",
+            "\\circ_1"
+        ],
+        [
+            "",
+            "\\mathbb{K}"
+        ],
+        [
+            "",
+            "\\mathbb{K}"
+        ],
+        [
+            "",
+            "\\mathbf{U}"
+        ],
+        [
+            "",
+            "\\circ_{m'}"
+        ],
+        [
+            "",
+            "\\circ_m"
+        ],
+        [
+            "",
+            "\\underbrace{d_X \\times d_X \\times \\dots \\times d_X}"
+        ],
+        [
+            "",
+            "\\mathbb{K}"
+        ],
+        [
+            "",
+            "\\mathbf{U}"
+        ],
+        [
+            "\\kbd",
+            "\\kbd{}"
+        ],
+        [
+            "",
+            "\\mathbb{K}"
+        ],
+        [
+            "",
             "\\substack{a_1, a_2 \\in A_s                                            \\\\ b_1, b_2 \\in B_s}"
         ],
         [
@@ -1530,611 +1658,11 @@
         ],
         [
             "",
-            "\\mathcal{Y}"
-        ],
-        [
-            "",
-            "\\mathcal{X}"
-        ],
-        [
-            "",
-            "\\mathcal{Y}"
-        ],
-        [
-            "",
-            "\\mathcal{X}"
-        ],
-        [
-            "",
-            "\\mathcal{X}"
-        ],
-        [
-            "",
-            "\\circ_m"
-        ],
-        [
-            "",
-            "\\underbrace{d_X \\times d_X \\times \\dots \\times d_X}"
-        ],
-        [
-            "",
-            "\\Omega_Q"
-        ],
-        [
-            "",
             "\\Omega_P"
         ],
         [
-            "",
-            "\\bigcup_{b \\in B}"
-        ],
-        [
-            "",
-            "\\mathbb{K}"
-        ],
-        [
-            "",
-            "\\mathcal{F}"
-        ],
-        [
-            "",
-            "\\int_{A}"
-        ],
-        [
-            "",
-            "\\int_{A}"
-        ],
-        [
-            "",
-            "\\sum_{i=1}"
-        ],
-        [
-            "",
-            "\\sum_{i=1}"
-        ],
-        [
-            "",
-            "\\mathbb{K}"
-        ],
-        [
-            "",
-            "\\int_{a}"
-        ],
-        [
-            "",
-            "\\mathbb{K}"
-        ],
-        [
-            "",
-            "\\mathbb{K}"
-        ],
-        [
-            "",
-            "\\sup_{a_1, a_2 \\in A_s}"
-        ],
-        [
-            "\\scale",
-            "\\scale"
-        ],
-        [
-            "\\eq",
-            "\\eq{}"
-        ],
-        [
-            "",
-            "\\emptyset_s"
-        ],
-        [
-            "",
-            "\\emptyset_s"
-        ],
-        [
-            "",
-            "\\sigma_2"
-        ],
-        [
-            "",
-            "\\sigma_1"
-        ],
-        [
-            "",
-            "\\sigma_2"
-        ],
-        [
-            "",
-            "\\sigma_1"
-        ],
-        [
-            "",
-            "\\mathcal{X}"
-        ],
-        [
-            "",
-            "\\mathcal{Y}"
-        ],
-        [
-            "",
-            "\\mathcal{Y}"
-        ],
-        [
-            "",
-            "\\mathcal{X}"
-        ],
-        [
-            "",
-            "\\mathbb{K}"
-        ],
-        [
-            "",
-            "\\bigcup_{k \\in K_s}"
-        ],
-        [
-            "",
-            "\\mathcal{X}"
-        ],
-        [
-            "",
-            "\\mathbb{K}"
-        ],
-        [
-            "",
-            "\\mathbb{K}"
-        ],
-        [
-            "",
-            "\\mathcal{R}"
-        ],
-        [
-            "",
-            "\\Omega_{P \\Rightarrow Q}"
-        ],
-        [
-            "",
-            "\\Omega_P"
-        ],
-        [
-            "",
-            "\\Omega_{P \\Rightarrow Q}"
-        ],
-        [
-            "",
-            "\\Omega_P"
-        ],
-        [
-            "",
-            "\\Omega_{P \\Rightarrow Q}"
-        ],
-        [
-            "",
-            "\\Omega_P"
-        ],
-        [
-            "",
-            "\\mathbb{K}"
-        ],
-        [
-            "",
-            "\\mathbb{K}"
-        ],
-        [
-            "",
-            "\\mathbf{U}"
-        ],
-        [
-            "",
-            "\\mathcal{Y}"
-        ],
-        [
-            "",
-            "\\mathcal{X}"
-        ],
-        [
-            "",
-            "\\mathcal{R}"
-        ],
-        [
-            "",
-            "\\mathcal{X}"
-        ],
-        [
-            "",
-            "\\circ_m"
-        ],
-        [
-            "",
-            "\\int_A"
-        ],
-        [
-            "",
-            "\\mathbb{N^*}"
-        ],
-        [
-            "",
-            "\\Omega_Q"
-        ],
-        [
-            "",
-            "\\circ_m"
-        ],
-        [
-            "",
-            "\\mathcal{X}"
-        ],
-        [
-            "",
-            "\\circ_{m'}"
-        ],
-        [
-            "",
-            "\\mathbb{K}"
-        ],
-        [
-            "",
-            "\\mathcal{Y}"
-        ],
-        [
-            "",
-            "\\sum_{i=1}"
-        ],
-        [
-            "",
-            "\\circ_m"
-        ],
-        [
-            "",
-            "\\mathbb{K}"
-        ],
-        [
-            "\\kgdt",
-            "\\kgdt{}"
-        ],
-        [
-            "\\gtcl",
-            "\\gtcl{}{}"
-        ],
-        [
-            "",
-            "\\sum_{i=1}"
-        ],
-        [
-            "",
-            "\\sum_{i=1}"
-        ],
-        [
-            "",
-            "\\circ_m"
-        ],
-        [
-            "",
-            "\\mathcal{R}"
-        ],
-        [
-            "",
-            "\\mathcal{D}"
-        ],
-        [
-            "",
-            "\\mathbb{K}"
-        ],
-        [
-            "\\kgdtmr",
-            "\\kgdtmr{}"
-        ],
-        [
-            "",
-            "\\int_{A}"
-        ],
-        [
-            "",
-            "\\mathbb{K}"
-        ],
-        [
-            "",
-            "\\int_{a}"
-        ],
-        [
-            "",
-            "\\int_{A}"
-        ],
-        [
-            "",
-            "\\mathbf{0}"
-        ],
-        [
-            "",
-            "\\boldsymbol{\\gamma}"
-        ],
-        [
-            "",
-            "\\Omega_P"
-        ],
-        [
-            "",
-            "\\mathbb{R}"
-        ],
-        [
-            "",
-            "\\mathbf{y}"
-        ],
-        [
-            "",
-            "\\mathbf{x}"
-        ],
-        [
-            "\\dimU",
-            "\\dimU"
-        ],
-        [
-            "",
-            "\\mathcal{Y}"
-        ],
-        [
-            "",
-            "\\mathcal{X}"
-        ],
-        [
-            "",
-            "\\emptyset_s"
-        ],
-        [
-            "",
-            "\\emptyset_s"
-        ],
-        [
-            "",
-            "\\emptyset_s"
-        ],
-        [
-            "\\gr",
-            "\\gr{}"
-        ],
-        [
-            "",
-            "\\mod{\\s}"
-        ],
-        [
-            "",
-            "\\circ_m"
-        ],
-        [
-            "",
-            "\\mathbb{N}"
-        ],
-        [
-            "",
-            "\\mathbf{t}"
-        ],
-        [
-            "",
-            "\\gamma_k"
-        ],
-        [
-            "",
-            "\\gamma_1"
-        ],
-        [
-            "",
-            "\\mathbf{t}"
-        ],
-        [
-            "",
-            "\\boldsymbol{\\gamma}"
-        ],
-        [
-            "",
-            "\\mathbb{N}"
-        ],
-        [
-            "",
-            "\\sum_{k=1}"
-        ],
-        [
-            "",
-            "\\bigcup_{b \\in B}"
-        ],
-        [
-            "",
-            "\\circ_m"
-        ],
-        [
-            "",
-            "\\sum_{(a,b) \\in A \\times B}"
-        ],
-        [
-            "",
-            "\\mathcal{R}"
-        ],
-        [
-            "",
-            "\\mathbb{K}"
-        ],
-        [
-            "",
-            "\\Omega_{P \\Rightarrow Q}"
-        ],
-        [
-            "",
-            "\\Omega_P"
-        ],
-        [
-            "",
-            "\\Omega_{P \\Rightarrow Q}"
-        ],
-        [
-            "",
-            "\\Omega_P"
-        ],
-        [
-            "",
-            "\\bigcup_{k \\in K_s}"
-        ],
-        [
-            "",
-            "\\circ_1"
-        ],
-        [
-            "",
-            "\\mathbf{y}"
-        ],
-        [
-            "",
-            "\\mathbf{x}"
-        ],
-        [
-            "",
-            "\\sigma_3"
-        ],
-        [
-            "",
-            "\\sigma_2"
-        ],
-        [
-            "",
-            "\\sigma_1"
-        ],
-        [
-            "",
-            "\\sigma_3"
-        ],
-        [
-            "",
-            "\\circ_m"
-        ],
-        [
-            "",
-            "\\sum_{c \\in A*B}"
-        ],
-        [
-            "\\rad",
-            "\\rad"
-        ],
-        [
-            "",
-            "\\sigma_2"
-        ],
-        [
-            "",
-            "\\sigma_1"
-        ],
-        [
-            "",
-            "\\mathbb{R}"
-        ],
-        [
-            "",
-            "\\mathrm{u}"
-        ],
-        [
-            "",
-            "\\mathrm{u}"
-        ],
-        [
-            "",
-            "\\mathbb{R}"
-        ],
-        [
-            "",
-            "\\mathbb{R}"
-        ],
-        [
-            "",
-            "\\mathbb{R}"
-        ],
-        [
-            "",
-            "\\sum_{(a, b) \\in A \\times B}"
-        ],
-        [
-            "",
-            "\\sum_{a*b=c}"
-        ],
-        [
-            "",
-            "\\sum_{c \\in A*B}"
-        ],
-        [
-            "",
-            "\\circ_m"
-        ],
-        [
-            "",
-            "\\circ_m"
-        ],
-        [
-            "",
-            "\\mathbb{K}"
-        ],
-        [
-            "",
-            "\\mathbf{U}"
-        ],
-        [
-            "",
-            "\\Omega_Q"
-        ],
-        [
-            "",
-            "\\mathbb{R}"
-        ],
-        [
-            "\\tsbdts",
-            "\\tsbdts{}"
-        ],
-        [
-            "\\ts",
-            "\\ts{}"
-        ],
-        [
-            "",
-            "\\mathbb{K}"
-        ],
-        [
-            "",
-            "\\mathbf{U}"
-        ],
-        [
-            "",
-            "\\mathcal{Y}"
-        ],
-        [
-            "",
-            "\\mathcal{X}"
-        ],
-        [
-            "",
-            "\\mathcal{R}"
-        ],
-        [
-            "",
-            "\\sum_{n=0}"
-        ],
-        [
-            "",
-            "\\exp_m"
-        ],
-        [
-            "",
-            "\\mathcal{Y}"
-        ],
-        [
-            "",
-            "\\mathcal{X}"
-        ],
-        [
-            "",
-            "\\circ_1"
-        ],
-        [
-            "",
-            "\\int_{[0, 1]^k}"
-        ],
-        [
-            "",
-            "\\mathbf{y}"
-        ],
-        [
-            "",
-            "\\mathbf{x}"
+            "\\pgr",
+            "\\pgr"
         ],
         [
             "md",
@@ -2146,7 +1674,59 @@
         ],
         [
             "",
-            "\\mathcal{Y}"
+            "\\mathbb{R}"
+        ],
+        [
+            "",
+            "\\mathbb{R}"
+        ],
+        [
+            "",
+            "\\mathbb{R}"
+        ],
+        [
+            "",
+            "\\sum_{a*b=c}"
+        ],
+        [
+            "",
+            "\\circ_m"
+        ],
+        [
+            "",
+            "\\mathbb{N^*}"
+        ],
+        [
+            "",
+            "\\sum_{a \\in A}"
+        ],
+        [
+            "",
+            "\\mathcal{D}"
+        ],
+        [
+            "",
+            "\\mathcal{D}"
+        ],
+        [
+            "",
+            "\\emptyset_s"
+        ],
+        [
+            "",
+            "\\emptyset_s"
+        ],
+        [
+            "",
+            "\\emptyset_s"
+        ],
+        [
+            "",
+            "\\mathbf{CF}"
+        ],
+        [
+            "",
+            "\\mathcal{X}"
         ],
         [
             "",
@@ -2158,43 +1738,463 @@
         ],
         [
             "",
-            "\\sum_{i=1}"
+            "\\sum_{b \\in B}"
         ],
         [
             "",
-            "\\Omega_{P \\Rightarrow Q}"
+            "\\sum_{a \\in A}"
         ],
         [
             "",
-            "\\Omega_P"
-        ],
-        [
-            "",
-            "\\Omega_{P \\Rightarrow Q}"
-        ],
-        [
-            "",
-            "\\Omega_P"
-        ],
-        [
-            "",
-            "\\circ_m"
-        ],
-        [
-            "",
-            "\\circ_m"
-        ],
-        [
-            "",
-            "\\mathcal{D}"
-        ],
-        [
-            "",
-            "\\mathcal{D}"
+            "\\sum_{(a, b) \\in A \\times B}"
         ],
         [
             "",
             "\\mathbb{K}"
+        ],
+        [
+            "\\pr",
+            "\\pr"
+        ],
+        [
+            "",
+            "\\circ_1"
+        ],
+        [
+            "",
+            "\\mathcal{R}"
+        ],
+        [
+            "",
+            "\\mathbb{K}"
+        ],
+        [
+            "",
+            "\\mathcal{Y}"
+        ],
+        [
+            "",
+            "\\mathcal{X}"
+        ],
+        [
+            "remark",
+            "\\end{remark}"
+        ],
+        [
+            "remark",
+            "\\begin{remark}"
+        ],
+        [
+            "",
+            "\\Omega_{P \\Rightarrow Q}"
+        ],
+        [
+            "",
+            "\\Omega_{P \\Rightarrow Q}"
+        ],
+        [
+            "",
+            "\\Omega_P"
+        ],
+        [
+            "",
+            "\\Omega_{P \\Rightarrow Q}"
+        ],
+        [
+            "",
+            "\\Omega_P"
+        ],
+        [
+            "",
+            "\\Omega_{P \\Rightarrow Q}"
+        ],
+        [
+            "",
+            "\\Omega_P"
+        ],
+        [
+            "",
+            "\\mathcal{R}"
+        ],
+        [
+            "",
+            "\\sup_{b_1, b_2 \\in B_s}"
+        ],
+        [
+            "",
+            "\\sup_{a_1, a_2 \\in A_s}"
+        ],
+        [
+            "",
+            "\\sup_{z_1, z_2 \\in (A + B)_s}"
+        ],
+        [
+            "",
+            "\\circ_m"
+        ],
+        [
+            "\\bd",
+            "\\bd{}"
+        ],
+        [
+            "",
+            "\\circ_1"
+        ],
+        [
+            "",
+            "\\sum_{c \\in A*B}"
+        ],
+        [
+            "",
+            "\\mathbb{K}"
+        ],
+        [
+            "",
+            "\\int_{a}"
+        ],
+        [
+            "",
+            "\\Omega_Q"
+        ],
+        [
+            "",
+            "\\Omega_P"
+        ],
+        [
+            "",
+            "\\Omega_{P \\Rightarrow Q}"
+        ],
+        [
+            "",
+            "\\Omega_P"
+        ],
+        [
+            "",
+            "\\sum_{(a,b) \\in A \\times B}"
+        ],
+        [
+            "",
+            "\\mathcal{R}"
+        ],
+        [
+            "\\rad",
+            "\\rad"
+        ],
+        [
+            "",
+            "\\mathbb{N^*}"
+        ],
+        [
+            "",
+            "\\Omega_Q"
+        ],
+        [
+            "",
+            "\\Omega_P"
+        ],
+        [
+            "",
+            "\\circ_1"
+        ],
+        [
+            "\\hbd",
+            "\\hbd{}{}"
+        ],
+        [
+            "",
+            "\\sum_{k=1}"
+        ],
+        [
+            "",
+            "\\sum_{k=1}"
+        ],
+        [
+            "",
+            "\\circ_1"
+        ],
+        [
+            "",
+            "\\Omega_{P \\Rightarrow Q}"
+        ],
+        [
+            "",
+            "\\Omega_P"
+        ],
+        [
+            "",
+            "\\Omega_Q"
+        ],
+        [
+            "",
+            "\\Omega_{P \\Rightarrow Q}"
+        ],
+        [
+            "",
+            "\\Omega_P"
+        ],
+        [
+            "",
+            "\\Omega_Q"
+        ],
+        [
+            "",
+            "\\mathbb{K}"
+        ],
+        [
+            "",
+            "\\mathcal{Y}"
+        ],
+        [
+            "",
+            "\\mathcal{X}"
+        ],
+        [
+            "",
+            "\\Omega_Q"
+        ],
+        [
+            "",
+            "\\Phi_{V(\\Phi)}"
+        ],
+        [
+            "",
+            "\\mathbf{CF}"
+        ],
+        [
+            "",
+            "\\mathbb{K}"
+        ],
+        [
+            "",
+            "\\sum_{a*b=c}"
+        ],
+        [
+            "",
+            "\\sum_{c \\in A*B}"
+        ],
+        [
+            "",
+            "\\sum_{c \\in A*B}"
+        ],
+        [
+            "",
+            "\\mathbb{K}"
+        ],
+        [
+            "",
+            "\\lim_{h\\rightarrow 0}"
+        ],
+        [
+            "",
+            "\\Delta_f"
+        ],
+        [
+            "",
+            "\\lim_{h\\rightarrow 0}"
+        ],
+        [
+            "",
+            "\\sup_{a_1, a_2 \\in A_s}"
+        ],
+        [
+            "",
+            "\\sup_{a_1, a_2 \\in A_s}"
+        ],
+        [
+            "",
+            "\\Omega_Q"
+        ],
+        [
+            "",
+            "\\Omega_Q"
+        ],
+        [
+            "",
+            "\\Omega_P"
+        ],
+        [
+            "",
+            "\\Omega_{P \\Rightarrow Q}"
+        ],
+        [
+            "",
+            "\\Omega_P"
+        ],
+        [
+            "",
+            "\\mathcal{Y}"
+        ],
+        [
+            "",
+            "\\mathcal{X}"
+        ],
+        [
+            "",
+            "\\mathcal{X}"
+        ],
+        [
+            "\\kgddmr",
+            "\\kgddmr{}"
+        ],
+        [
+            "",
+            "\\circ_m"
+        ],
+        [
+            "",
+            "\\mathbb{K}"
+        ],
+        [
+            "",
+            "\\int_{a}"
+        ],
+        [
+            "",
+            "\\int_{A}"
+        ],
+        [
+            "",
+            "\\mathbb{K}"
+        ],
+        [
+            "",
+            "\\mathbf{U}"
+        ],
+        [
+            "",
+            "\\mathcal{F}"
+        ],
+        [
+            "",
+            "\\Omega_Q"
+        ],
+        [
+            "",
+            "\\mathbb{K}"
+        ],
+        [
+            "",
+            "\\mathbf{CF}"
+        ],
+        [
+            "",
+            "\\bigcup_{k \\in K_s}"
+        ],
+        [
+            "",
+            "\\sigma_2"
+        ],
+        [
+            "",
+            "\\sigma_1"
+        ],
+        [
+            "",
+            "\\sigma_2"
+        ],
+        [
+            "",
+            "\\sigma_1"
+        ],
+        [
+            "",
+            "\\inf_{b\\in A}"
+        ],
+        [
+            "",
+            "\\underbrace{d_X \\times d_X \\times \\dots \\times d_X}"
+        ],
+        [
+            "",
+            "\\mathbb{R}"
+        ],
+        [
+            "",
+            "\\sup_{b_1, b_2 \\in B_s}"
+        ],
+        [
+            "",
+            "\\sup_{a_1, a_2 \\in A_s}"
+        ],
+        [
+            "",
+            "\\mathcal{F}"
+        ],
+        [
+            "",
+            "\\mathbb{K}"
+        ],
+        [
+            "",
+            "\\sum_{i=1}"
+        ],
+        [
+            "",
+            "\\mathcal{D}"
+        ],
+        [
+            "",
+            "\\mathcal{D}"
+        ],
+        [
+            "",
+            "\\mathbf{CF}"
+        ],
+        [
+            "",
+            "\\mathbf{CF}"
+        ],
+        [
+            "\\kgdt",
+            "\\kgdt{}"
+        ],
+        [
+            "",
+            "\\mathbb{R}"
+        ],
+        [
+            "",
+            "\\mathbb{R}"
+        ],
+        [
+            "",
+            "\\sum_{k=1}"
+        ],
+        [
+            "",
+            "\\mathbb{K}"
+        ],
+        [
+            "",
+            "\\mathbb{K}"
+        ],
+        [
+            "",
+            "\\mathbf{U}"
+        ],
+        [
+            "",
+            "\\bigcup_{k \\in K_s}"
+        ],
+        [
+            "definition",
+            "\\end{definition}"
+        ],
+        [
+            "definition",
+            "\\begin{definition}"
+        ],
+        [
+            "",
+            "\\lim_{n \\to \\infty}"
+        ],
+        [
+            "proposition",
+            "\\end{proposition}"
+        ],
+        [
+            "proposition",
+            "\\begin{proposition}"
         ]
     ]
 }

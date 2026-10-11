@@ -6,7 +6,7 @@
     "formatVersion": 2,
     "menu": "",
     "name": "envdef",
-    "shortcut": "Ctrl+A,Ctrl+D",
+    "shortcut": "Ctrl+A, Ctrl+D",
     "tag": [
         "\\begin{definition}",
         "\t%<formula%>",

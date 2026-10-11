@@ -3,38 +3,84 @@
 TARGET_DIR="/home/admin"
 USER_NAME="admin"
 
-# Kiểm tra nếu không chạy bằng quyền root thì tự động gọi sudo
+# ==================================================
+# CẤU HÌNH SAMBA
+# ==================================================
+SAMBA_IP="100.89.4.111"
+SAMBA_SHARE="RootServer"
+SAMBA_USER="cuong"
+SAMBA_PASS="@thienhadenhatbang123"
+# ==================================================
+
 if [ "$EUID" -ne 0 ]; then
-    echo "🔑 Script cần quyền Root để thực thi không hỏi password..."
+    echo "🔑 Script cần quyền Root để thực thi..."
     exec sudo "$0" "$@"
 fi
 
 echo "=================================================="
-echo "🚀 BẮT ĐẦU TỰ ĐỘNG GPUSH TOÀN BỘ REPO TRONG $TARGET_DIR"
+echo "🚀 BẮT ĐẦU TỰ ĐỘNG COMPILE, CLEAN, SAMBA & GPUSH"
 echo "=================================================="
 
-# Tìm tất cả thư mục chứa .git
-find "$TARGET_DIR" -maxdepth 3 -type d -name ".git" 2>/dev/null | while read -r gitdir; do
+find "$TARGET_DIR" -mindepth 2 -maxdepth 3 -type d -name ".git" 2>/dev/null | while read -r gitdir; do
     repo_dir=$(dirname "$gitdir")
-    
+
     echo ""
     echo "📁 Đang xử lý repo: $repo_dir"
     echo "--------------------------------------------------"
-    
-    # Dùng runuser để thực thi chuỗi lệnh dưới quyền admin mà KHÔNG hỏi password
-    runuser -l "$USER_NAME" -c "
-        cd \"$repo_dir\" || exit 1
 
-        # Kiểm tra thay đổi
+    # Chuyển sang user admin để thực thi các thao tác
+    runuser -l "$USER_NAME" -c "
+        cd '$repo_dir' || exit 1
+
+        # ⚙️ 1. BIÊN DỊCH TẤT CẢ FILE .TEX SANG PDF
+        find . -maxdepth 3 -type f -name '*.tex' | while read -r texfile; do
+            echo \"⚙️ Đang compile LaTeX: \$texfile\"
+            xelatex -interaction=nonstopmode -halt-on-error \"\$texfile\" >/dev/null 2>&1 || \
+            pdflatex -interaction=nonstopmode -halt-on-error \"\$texfile\" >/dev/null 2>&1
+        done
+
+        # 📤 2. UPLOAD FILE PDF LÊN SAMBA (Hiển thị log lỗi chi tiết)
+        if command -v smbclient &> /dev/null; then
+            echo \"🖥️ Đang tìm và upload file PDF lên Samba ($SAMBA_IP)...\"
+            find . -maxdepth 3 -type f -name '*.pdf' | while read -r pdffile; do
+                filename=\$(basename \"\$pdffile\")
+                echo \"   ➔ Đang đẩy \$filename lên Samba...\"
+
+                # Thực thi smbclient và in lỗi ra màn hình nếu có
+                smbclient \"//$SAMBA_IP/$SAMBA_SHARE\" \
+                    --user=\"$SAMBA_USER\" \
+                    --password=\"$SAMBA_PASS\" \
+                    -c \"prompt OFF; cd home/cuong; put \\\"\$pdffile\\\" \\\"\$filename\\\"\"
+            done
+        else
+            echo \"⚠️ Chưa cài smbclient! Hãy chạy 'sudo apt install smbclient'.\"
+        fi
+
+        # 🧹 3. DỌN DẸP FILE RÁC LATEX VÀ BAK*
+        echo \"🧹 Đang quét dọn các file tạm LaTeX (.aux, .log, .toc, .bak*...)...\"
+        find . -maxdepth 3 -type f \( \
+            -name '*.aux' -o \
+            -name '*.log' -o \
+            -name '*.out' -o \
+            -name '*.toc' -o \
+            -name '*.bbl' -o \
+            -name '*.blg' -o \
+            -name '*.synctex.gz' -o \
+            -name '*.fdb_latexmk' -o \
+            -name '*.fls' -o \
+            -name '*.bak*' \
+        \) -delete 2>/dev/null
+
+        # 📦 4. KIỂM TRA THAY ĐỔI, ADD & COMMIT
         if [ -n \"\$(git status --porcelain)\" ]; then
             echo \"📦 Phát hiện thay đổi mới, đang add & commit...\"
             git add .
-            git commit -m \"Auto commit & push script: \$(date +'%Y-%m-%d %H:%M:%S')\"
+            git commit -m \"Auto compile, upload Samba & push: \$(date +'%Y-%m-%d %H:%M:%S')\"
         else
             echo \"ℹ️ Không có thay đổi mới cần commit.\"
         fi
 
-        # Kiểm tra branch và push
+        # 📤 5. PUSH LÊN GITHUB
         current_branch=\$(git rev-parse --abbrev-ref HEAD 2>/dev/null)
         if [ -n \"\$current_branch\" ]; then
             echo \"📤 Đang push nhánh: \$current_branch...\"
@@ -47,5 +93,8 @@ done
 
 echo ""
 echo "=================================================="
-echo "✅ HOÀN TẤT GPUSH CHO TẤT CẢ REPO!"
+echo "✅ HOÀN TẤT TOÀN BỘ QUY TRÌNH!"
 echo "=================================================="
+
+sleep 5
+exit
